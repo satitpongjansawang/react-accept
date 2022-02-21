@@ -36,7 +36,7 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
   useEffect(() => {
     initLine();
   },  []);
-
+//CreateDate	LINE_UserID	pictureUrl	displayname	os	language	email
   function postData(){
     let data = {userId , pictureUrl , displayName ,os , lang ,email}
     fetch("https://script.google.com/macros/s/AKfycbwAEfbNGlEMYAcQh7RZrQa9hzGU93ARE5mPDaQ1cZi73apbKQly/exec",{
