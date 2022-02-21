@@ -13,7 +13,7 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
 
 
   const initLine = () => {
-    liff.init({ liffId : "1655945045-oLgRxBZ0"}, () => {
+    liff.init({ liffId : "1655945045-oLgRxBZ"}, () => {
       if (liff.isLoggedIn() ){
         runApp();
       }else{
