@@ -1,3 +1,7 @@
 h1, p {
   font-family: Lato;
 }
+.profile{
+  height: 60px;
+  width: 60px;
+}
