@@ -24,12 +24,12 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
 
   const runApp = () =>{
     liff.getProfile().then(profile => {
-      setDisplayName(profile.displayName);
-      setPictureUrl(profile.pictureUrl);
       setUserId(profile.userId);
-      setEmail(liff.getDecodedIDToken().email);
+      setPictureUrl(profile.pictureUrl);
+      setDisplayName(profile.displayName);
       setOS(liff.getOS());
       setLang(liff.getLanguage());
+      setEmail(liff.getDecodedIDToken().email);
     }).catch(err => console.error(err));
   }
 
@@ -53,7 +53,7 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
           <div class="row">
             <div class="col-4"><img className="profile" src={pictureUrl} /></div>
             <div class="col-8"><p class="input-group mb-3">{displayName}</p>
-            <p class="input-group mb-3">{email}</p></div>
+            <p class="input-group mb-3">{email} {userId} {os} {lang}</p></div>
              <div>
                <button type="button" class="btn btn-success" onClick={postData} >ส่งข้อมูล</button> 
              </div> 
