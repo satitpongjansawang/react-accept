@@ -51,7 +51,7 @@ function App() {//LINE_UserID	pictureUrl	displayname	os	language	email	phone
       <div class="card ">
         <div class="card-header">
           <div class="row">
-            <div class="col-4"><img className="profile" src={pictureUrl} class="img-thumbnail rounded-circle" /></div>
+            <div class="col-4"><img className="profile" src={pictureUrl}/></div>
             <div class="col-8"><p class="input-group mb-3">{displayName}</p>
             <p class="input-group mb-3">{email}</p></div>
              <div>
